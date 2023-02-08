@@ -1,8 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:first_app/views/login_view.dart';
-
 import 'firebase_options.dart';
 
 void main() async {
@@ -38,7 +36,7 @@ class HomePage extends StatelessWidget {
                 if (user?.emailVerified ?? false) {
                   print("you are verified");
                 } else {
-                  print("you need to verify email first");
+                  print("you need to verify email first ---deneme");
                 }
                 return Text("Done");
               default:
